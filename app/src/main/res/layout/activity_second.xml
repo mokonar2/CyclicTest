@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/tvSpringInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="28dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Фактическая высота пружины\nпри статической нагрузке, мм"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etHeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите значение"
+            android:inputType="numberDecimal"
+            android:textSize="28sp"
+            android:gravity="center"
+            android:layout_marginBottom="28dp" />
+
+        <Button
+            android:id="@+id/btnCalculate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Рассчитать"
+            android:textSize="22sp"
+            android:padding="20dp"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="24dp"
+            android:padding="20dp"
+            android:background="#E3F2FD"
+            android:minHeight="100dp"
+            android:text="" />
+
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Очистить"
+            android:textSize="22sp"
+            android:padding="20dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#78909C" />
+
+        <Button
+            android:id="@+id/btnSelectAnother"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Выбрать другую пружину"
+            android:textSize="22sp"
+            android:padding="20dp"
+            android:backgroundTint="#FF6F00" />
+
+    </LinearLayout>
+</ScrollView>
